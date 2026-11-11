@@ -1,0 +1,490 @@
+{
+  "schema": 1,
+  "api": "https://worldwide-id.fly.dev",
+  "site": "https://linbatkivi.github.io/",
+  "launcher": {
+    "repo": "linbatkivi/worldwide-studios",
+    "assets": {
+      "darwin": "Worldwide-macOS.dmg",
+      "win32": "Worldwide-Setup.exe",
+      "linux": "Worldwide-Linux.AppImage"
+    }
+  },
+  "studios": [
+    {
+      "id": "worldwide",
+      "name": "Worldwide (Studios)"
+    },
+    {
+      "id": "kivi",
+      "name": "(kivi studios)",
+      "parent": "worldwide"
+    }
+  ],
+  "games": [
+    {
+      "id": "white-dust",
+      "name": "White Dust",
+      "studio": "kivi",
+      "status": "released",
+      "genre": {
+        "da": "Taktisk multiplayer-FPS",
+        "en": "Tactical multiplayer FPS"
+      },
+      "tagline": {
+        "da": "SWAT mod Hijackers. Bombe, købsfase og fem mod fem.",
+        "en": "SWAT versus Hijackers. Bomb, buy phase and five on five."
+      },
+      "description": {
+        "da": "Hver runde starter med en købsfase. Derefter skal Hijackers plante bomben, og SWAT skal stoppe dem. Første hold til syv runder vinder. Du er selv vært for dine kampe, så der er ingen server at vente på.",
+        "en": "Every round opens with a buy phase. Then the Hijackers plant the bomb and SWAT stops them. First team to seven rounds wins. You host your own matches, so there is no server to wait for."
+      },
+      "facts": [
+        {
+          "k": {
+            "da": "Hold",
+            "en": "Teams"
+          },
+          "v": {
+            "da": "5 mod 5, med bots hvis I er for få",
+            "en": "5 v 5, with bots if you are short"
+          }
+        },
+        {
+          "k": {
+            "da": "Baner",
+            "en": "Maps"
+          },
+          "v": "Bureau · Niseko · Fattoria"
+        },
+        {
+          "k": {
+            "da": "Multiplayer",
+            "en": "Multiplayer"
+          },
+          "v": {
+            "da": "Peer-to-peer, værten er serveren",
+            "en": "Peer to peer, the host is the server"
+          }
+        },
+        {
+          "k": {
+            "da": "Sprog",
+            "en": "Languages"
+          },
+          "v": {
+            "da": "Dansk, engelsk, tysk, fransk, spansk, kinesisk",
+            "en": "Danish, English, German, French, Spanish, Chinese"
+          }
+        }
+      ],
+      "platforms": [
+        "win32",
+        "darwin",
+        "linux"
+      ],
+      "art": {
+        "hero": "white-dust/hero.webp",
+        "card": "white-dust/hero-sm.webp",
+        "shots": [
+          "white-dust/s1.webp",
+          "white-dust/s2.webp",
+          "white-dust/s3.webp",
+          "white-dust/s4.webp",
+          "white-dust/s5.webp"
+        ]
+      },
+      "package": {
+        "kind": "web-manifest",
+        "runtime": "white-dust",
+        "manifest": "https://linbatkivi.github.io/white-dust-web/game/manifest.json",
+        "source": "https://github.com/linbatkivi/white_dust"
+      }
+    },
+    {
+      "id": "blindline",
+      "name": "Blindline",
+      "studio": "kivi",
+      "status": "in-development",
+      "genre": {
+        "da": "Co-op rally",
+        "en": "Co-op rally"
+      },
+      "tagline": {
+        "da": "Chaufføren kan næsten ikke se. Navigatøren har kortet.",
+        "en": "The driver can barely see. The navigator has the map."
+      },
+      "description": {
+        "da": "Chaufføren kører i en så tæt støvtåge, at vejen næsten forsvinder. Navigatøren sidder med kortet og råber sving og farer. Kør solo, eller start en lobby og få op til fire besætninger med. Hvert løb har nedtælling, kontrolpunkter og tider.",
+        "en": "The driver races through dust so thick the road almost disappears. The navigator holds the map and calls out the corners and hazards. Drive solo, or start a lobby with up to four crews. Every race has a countdown, checkpoints and times."
+      },
+      "facts": [
+        {
+          "k": {
+            "da": "Besætning",
+            "en": "Crew"
+          },
+          "v": {
+            "da": "Chauffør og navigatør, op til fire biler",
+            "en": "Driver and navigator, up to four cars"
+          }
+        },
+        {
+          "k": {
+            "da": "Online",
+            "en": "Online"
+          },
+          "v": {
+            "da": "Peer-to-peer med en kode på 5 tegn",
+            "en": "Peer to peer with a 5 character code"
+          }
+        },
+        {
+          "k": {
+            "da": "Udseende",
+            "en": "Look"
+          },
+          "v": {
+            "da": "N64-stil, 240 linjer",
+            "en": "N64 style, 240 lines"
+          }
+        }
+      ],
+      "platforms": [
+        "win32",
+        "darwin",
+        "linux"
+      ],
+      "art": {
+        "hero": "blindline/hero2.webp",
+        "card": "blindline/hero2-sm.webp",
+        "shots": [
+          "blindline/c1.webp",
+          "blindline/c2.webp",
+          "blindline/c3.webp",
+          "blindline/c4.webp"
+        ]
+      },
+      "package": {
+        "kind": "native",
+        "version": "0.5.5",
+        "builds": {
+          "darwin-arm64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/blindline-v0.5.5/Blindline-macOS-arm64.zip",
+            "sha256": "18b05b47e3d2b4447a7cce7bdeb241cb97a2f34238f74e20b496465674c049c9",
+            "size": 127659842,
+            "exec": "Blindline.app/Contents/MacOS/Blindline"
+          },
+          "darwin-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/blindline-v0.5.5/Blindline-macOS-x64.zip",
+            "sha256": "059e00219f9968676838818835de36caff6bdf2fe5f857aa8c7863c0ae3ef468",
+            "size": 134861084,
+            "exec": "Blindline.app/Contents/MacOS/Blindline"
+          },
+          "win32-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/blindline-v0.5.5/Blindline-Windows.zip",
+            "sha256": "ff8be2b0d621b1003d4a732aceceb27e82ca15ac4e36d8273f46d6ac5942180d",
+            "size": 151749805,
+            "exec": "Blindline.exe"
+          },
+          "linux-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/blindline-v0.5.5/Blindline-Linux.zip",
+            "sha256": "4c44323fcf801fa68ffa29e80210fe1856c4f1cbbd75cfe9699a75187daff925",
+            "size": 128155307,
+            "exec": "blindline",
+            "args": [
+              "--no-sandbox"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "flugt",
+      "name": "Flugt",
+      "studio": "kivi",
+      "status": "released",
+      "genre": {
+        "da": "Jagt i første person",
+        "en": "First-person chase"
+      },
+      "tagline": {
+        "da": "Den kommer efter dig. Den er hurtigere.",
+        "en": "It is coming for you. It is faster."
+      },
+      "description": {
+        "da": "Du står på et stort kort, og alt står stille. Så snart du rører en tast, starter uret, og PNG'en kommer efter dig. Den er hurtigere end dig og bliver ved med at blive det. Brug mure, labyrinten, U-formede gårde og kasser, du selv sætter ud, til at snyde den. Den, der holder længst, står øverst på tavlen.",
+        "en": "You stand on a big map and everything is frozen. The moment you touch a key the clock starts and the PNG comes for you. It is faster than you and keeps getting faster. Use walls, the maze, U-shaped yards and crates you place yourself to fool it. Whoever lasts longest tops the leaderboard."
+      },
+      "facts": [
+        {
+          "k": {
+            "da": "Kort",
+            "en": "Map"
+          },
+          "v": {
+            "da": "500 × 500 meter med labyrint, containerhavn, tårne og pilleskov",
+            "en": "500 × 500 meters with a maze, container yard, towers and pillar forest"
+          }
+        },
+        {
+          "k": {
+            "da": "Tavle",
+            "en": "Leaderboard"
+          },
+          "v": {
+            "da": "Længste tid pr. konto",
+            "en": "Longest time per account"
+          }
+        },
+        {
+          "k": {
+            "da": "Styring",
+            "en": "Controls"
+          },
+          "v": {
+            "da": "WASD, mus, mellemrum, Shift og E",
+            "en": "WASD, mouse, space, Shift and E"
+          }
+        },
+        {
+          "k": {
+            "da": "Udseende",
+            "en": "Look"
+          },
+          "v": {
+            "da": "N64-stil, PNG'en i fuld opløsning",
+            "en": "N64 style, the PNG at full resolution"
+          }
+        }
+      ],
+      "platforms": [
+        "win32",
+        "darwin",
+        "linux"
+      ],
+      "art": {
+        "hero": "flugt/hero.webp",
+        "card": "flugt/hero-sm.webp",
+        "shots": [
+          "flugt/s1.webp",
+          "flugt/s2.webp",
+          "flugt/s3.webp",
+          "flugt/s4.webp"
+        ]
+      },
+      "package": {
+        "kind": "bundled",
+        "runtime": "bundled",
+        "dir": "flugt",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "id": "freefall",
+      "name": "Freefall",
+      "studio": "kivi",
+      "status": "in-development",
+      "genre": {
+        "da": "Parkour-fangeleg",
+        "en": "Parkour tag"
+      },
+      "tagline": {
+        "da": "Fangeleg mellem skyskrabere. Rør en anden, så er det dem, der er Den.",
+        "en": "Tag between skyscrapers. Touch someone else and they become It."
+      },
+      "description": {
+        "da": "Den, der er Den, skal røre en anden. Når tiden løber ud, vinder den, der har været Den i færrest sekunder. Du løber, dobbelthopper, dasher, løber på vægge og bruger gribekrog mellem tårne og svævende platforme. Falder du ned i voiden, starter du forfra på toppen. Spil solo mod bots, eller start et rum og få andre med via en kode på fire tal.",
+        "en": "Whoever is It has to touch someone else. When time runs out, the player who has been It for the fewest seconds wins. You run, double jump, dash, wall-run and use a grappling hook between towers and floating platforms. Fall into the void and you start over at the top. Play solo against bots, or start a room and bring others in with a four digit code."
+      },
+      "facts": [
+        {
+          "k": {
+            "da": "Spillere",
+            "en": "Players"
+          },
+          "v": {
+            "da": "Solo mod bots, eller op til otte online",
+            "en": "Solo against bots, or up to eight online"
+          }
+        },
+        {
+          "k": {
+            "da": "Online",
+            "en": "Online"
+          },
+          "v": {
+            "da": "Peer-to-peer med en kode på 4 tal",
+            "en": "Peer to peer with a 4 digit code"
+          }
+        },
+        {
+          "k": {
+            "da": "Bevægelse",
+            "en": "Movement"
+          },
+          "v": {
+            "da": "Dobbelthop, dash, wall-run og gribekrog",
+            "en": "Double jump, dash, wall-run and grappling hook"
+          }
+        }
+      ],
+      "platforms": [
+        "win32",
+        "darwin",
+        "linux"
+      ],
+      "art": {
+        "hero": "freefall/hero.webp",
+        "card": "freefall/hero-sm.webp",
+        "shots": [
+          "freefall/s1.webp",
+          "freefall/s2.webp",
+          "freefall/s3.webp"
+        ]
+      },
+      "package": {
+        "kind": "native",
+        "version": "0.2.0",
+        "builds": {
+          "darwin-arm64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/freefall-v0.2.0/Freefall-macOS-arm64.zip",
+            "sha256": "3a70f3516d610eadc0027c4c804e21cf25b133877c0fe73909af5d71303215b0",
+            "size": 118808193,
+            "exec": "Freefall.app/Contents/MacOS/Freefall"
+          },
+          "darwin-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/freefall-v0.2.0/Freefall-macOS-x64.zip",
+            "sha256": "05bfaed03003cdfcfd3b472d4b4d10f798495abc19c4cc56a8ce0d506e86a70f",
+            "size": 126009434,
+            "exec": "Freefall.app/Contents/MacOS/Freefall"
+          },
+          "win32-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/freefall-v0.2.0/Freefall-Windows.zip",
+            "sha256": "38fd59d62ac1d94e6116ff2e0d8d4897e06b4dcad15a3d0fcb0c55f9a569eadf",
+            "size": 143190399,
+            "exec": "Freefall.exe"
+          },
+          "linux-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/freefall-v0.2.0/Freefall-Linux.zip",
+            "sha256": "baca597adf1cc22f525e2a1ea0efef7906e58b488896e9c5768841e0edd2a015",
+            "size": 119595668,
+            "exec": "freefall",
+            "args": [
+              "--no-sandbox"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "offside",
+      "name": "Offside",
+      "studio": "kivi",
+      "status": "in-development",
+      "genre": {
+        "da": "Fodbold",
+        "en": "Football"
+      },
+      "tagline": {
+        "da": "Fodbold med rigtige regler. Dommeren, offside og målmanden følger lovene.",
+        "en": "Football with real rules. The referee, offside and the keeper follow the laws."
+      },
+      "description": {
+        "da": "Elleve mod elleve med en dommer der dømmer frispark, kort, fordel, hånd og offside, målt på kroppen. Bolden følger rigtig fysik med luftmodstand, skrue, vind og højde over havet, og målmanden kaster sig kun efter det, han kan nå. Spil mod computeren, mod en ven eller online med en kode. Værten er serveren, og kampen spoles tilbage, hvis et input kommer for sent, så udfaldet er det samme uanset ping.",
+        "en": "Eleven against eleven with a referee who calls fouls, cards, advantage, handball and offside, measured on the body. The ball follows real physics with drag, spin, wind and altitude, and the keeper only dives for what he can reach. Play the computer, a friend or online with a code. The host is the server, and the match rewinds if an input arrives late, so the outcome is the same whatever the ping."
+      },
+      "facts": [
+        {
+          "k": {
+            "da": "Spillere",
+            "en": "Players"
+          },
+          "v": {
+            "da": "Op til seks online, to lokalt, resten er computeren",
+            "en": "Up to six online, two locally, the rest is the computer"
+          }
+        },
+        {
+          "k": {
+            "da": "Online",
+            "en": "Online"
+          },
+          "v": {
+            "da": "Peer-to-peer med en kode på 5 tegn, værten er serveren",
+            "en": "Peer to peer with a 5 character code, the host is the server"
+          }
+        },
+        {
+          "k": {
+            "da": "Tilstande",
+            "en": "Modes"
+          },
+          "v": {
+            "da": "Hurtig kamp, pokalturnering, træning",
+            "en": "Quick match, cup, practice"
+          }
+        },
+        {
+          "k": {
+            "da": "Hold",
+            "en": "Teams"
+          },
+          "v": {
+            "da": "20 opfundne klubber, 5 stadioner",
+            "en": "20 invented clubs, 5 stadiums"
+          }
+        }
+      ],
+      "platforms": [
+        "win32",
+        "darwin",
+        "linux"
+      ],
+      "art": {
+        "hero": "offside/hero.webp",
+        "card": "offside/hero-sm.webp",
+        "shots": [
+          "offside/s1.webp",
+          "offside/s2.webp",
+          "offside/s3.webp",
+          "offside/s4.webp",
+          "offside/s5.webp"
+        ]
+      },
+      "package": {
+        "kind": "native",
+        "version": "0.1.1",
+        "builds": {
+          "darwin-arm64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/offside-v0.1.1/Offside-macOS-arm64.zip",
+            "sha256": "0720b7891f485e43123bf3f0af52fd8d39338aec9dbecb50ef6329dc3eb4c9ce",
+            "size": 120541121,
+            "exec": "Offside.app/Contents/MacOS/Offside"
+          },
+          "darwin-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/offside-v0.1.1/Offside-macOS-x64.zip",
+            "sha256": "6cc685f2d980a74f53282d57fd32fb170ff51a92dc92127f6aba7774f7148e5c",
+            "size": 127745929,
+            "exec": "Offside.app/Contents/MacOS/Offside"
+          },
+          "win32-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/offside-v0.1.1/Offside-Windows.zip",
+            "sha256": "ddf6a24348d80ccb24fa3da87f53fd9a751e8be79cebfd5804ea563ba57a0c43",
+            "size": 144713485,
+            "exec": "Offside.exe"
+          },
+          "linux-x64": {
+            "url": "https://github.com/linbatkivi/worldwide-studios/releases/download/offside-v0.1.1/Offside-Linux.zip",
+            "sha256": "6f8d9262e13326e4078c903d2389de58dffcece326fea964796132645f24002a",
+            "size": 121013246,
+            "exec": "offside",
+            "args": [
+              "--no-sandbox"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
